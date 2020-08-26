@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+@keyframes fade{from{opacity: 0.1;}to{opacity: 1;}}
+.fade{animation-name: fade;animation-duration: 1.5s;}
+.container{
+    width: 90%;
+    max-width: 1200px;
+}
+.wrapper{
+    min-width: 100%;
+}
+.global_div{
+    height: 100vh;
+    min-height: 450px;
+    position: relative;
+}
+.bg_img{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* min-height: 600px; */
+    background: url(../maket/fon.png);
+    background-size:cover;
+}
+.bg_img::before{
+    content:"";
+    position: absolute;
+    z-index:2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.header{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    height: 100%;
+    width: 100%;
+}
+#logo{
+    max-width: 5vw;
+}
+/* -----------------------------MAIN------------------------------ */
+.main_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+.header_main{
+    width: 100%;
+    display: flex;
+    justify-content:space-around ;
+    flex-direction: row;
+    align-items:center;
+    margin-top: 20px;
+}
+.main{
+    width: 50%;
+    margin-right: -80px;
+}
+.main ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+.main ul a{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+    color: white;
+    height: 6vw;
+    width: auto;
+    font-size: 16px;
+}
+.main ul a span{
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: #11749e;
+    transition: 0.2s;
+}
+.main ul a:hover span{
+    left:0;
+}
+.social_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width:13%;
+}
+.social_img{
+    width:20px;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+#img_1{
+    background:url(../maket/facebook.svg) center no-repeat;
+    background-size: 20px;
+
+}
+#img_1:hover{
+    background:url(../maket/facebook2.svg) no-repeat center;
+    background-size: 20px;
+}
+#img_2{
+    background:url(../maket/linkedin.svg) no-repeat center;
+    background-size: 20px;
+}
+#img_2:hover{
+    background:url(../maket/linkedin2.svg) no-repeat center;
+    background-size: 20px;
+}
+#img_3{
+    background:url(../maket/skype.svg) no-repeat center;
+    background-size: 20px;
+}
+#img_3:hover{
+    background:url(../maket/skype2.svg) no-repeat center;
+    background-size: 20px;
+}
+#img_4{
+    background:url(../maket/twitter.svg) no-repeat center;
+    background-size: 20px;
+}
+#img_4:hover{
+    background:url(../maket/twitter2.svg) no-repeat center;
+    background-size: 20px;
+}
+.main_line{
+    width: 110%;
+    height: 1px;
+    background:#797979;
+}
+/* -----------------------------TITLES------------------------------ */
+.titels{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    margin-top: 1%;
+    width: 100%;
+}
+.titels h1{
+    color: rgb(255, 255, 255);
+    font-size: 10vw;
+    text-transform: uppercase;
+}
+.titels h3{
+    color: #11749e;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 1.4vw;
+    margin-right: -1.6%;
+}
+/* ----------------------------BUTTON------------------------------ */
+.button{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+   padding-bottom: 50px;
+}
+.button button{
+    background: rgba(0, 0, 0, 0);
+    width: 4.7vw;
+    min-width: 50px;
+    height: 4.7vw;
+    min-height: 50px;
+    border: none; 
+    outline: none;
+    transition: 0.5s;
+}
+.button button svg{
+    width: 100%;
+    height: 100%;
+    fill: white;
+    transition: 0.5s;
+}
+.button button:hover svg{
+    transform: rotate(360deg);
+    border-color: currentColor;
+    fill: #11749e ;
+}
+.button p{
+    color: #d5d5d5;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+/* ---------------------------------------------block 2 ------------------------------------*/
+.wrapper_blocks{
+    width: 100%;
+    background: #11749e;
+}
+.content_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 auto;
+    min-height: 20vw;
+    height: auto;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.top_title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 14vw;
+}
+.top_title h1{
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 2.7vw;
+}
+.top_title p{
+    position: absolute;
+    z-index: 1;
+    font-size: 14vw;
+    font-weight: 800;
+    color: #5993b2;
+    font-stretch: extra-condensed;
+}
+.icon_blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+}
+.icon_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    width:17vw;
+    margin:20px;
+}
+.icon_box h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0.6vw;
+    color:white;
+}
+.icon_box p{
+    text-align: center;
+    font-size: 13px;
+    color:rgb(231, 231, 231);
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 17px;
+}
+.circle{
+    border-radius: 50%;
+    background: #2e85aa;
+    width: 9vw;
+    min-height: 100px;
+    height: 9vw;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 1vw;
+}
+.icon{
+    width: 30%;
+}
