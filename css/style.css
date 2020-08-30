@@ -533,7 +533,7 @@
 
 /* -------------------------------tutorial------------------------------- */
 .tutorial_wrapper {
-    background: url(/maket/bg_tutorial.png) no-repeat center;
+    background: url(../maket/bg_tutorial.png) no-repeat center;
     background-size: cover;
 }
 
