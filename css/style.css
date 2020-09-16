@@ -67,7 +67,7 @@ body {
 
 }
 .animate_logo {
-    transform: translateX(-300%);
+    transform: translateX(-100vw);
 }
 /* -----------------------------MAIN------------------------------ */
 .burger__main {
