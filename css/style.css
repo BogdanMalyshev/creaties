@@ -1048,3 +1048,22 @@ body {
         display:none;                       
     }
 }
+
+/*---------------------------------footer---------------------------------*/
+
+.wrapper_footer {
+    background:#222222;
+    height: 80px;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    color: white ;
+    font-size: 13px;
+}
