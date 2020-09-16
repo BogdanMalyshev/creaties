@@ -9,45 +9,47 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="wrapper" class="wrapper">
         <div class="global_div">
             <div class="bg_img"></div>
             <div class="header">
-
-                <div class="container main_container">
+                <div class="main_opacity"></div>
+                <div id="main_container" class="main_container">
                     <div class="header_main">
                         <img id="logo" src="maket/logo.png" alt="#">
-                        <div class="main">
+                        <div id="main" class="main">
                             <ul>
-                                <a href="#">Home<span></span></a>
-                                <a href="#">Pages<span></span></a>
-                                <a href="#">Features<span></span></a>
-                                <a href="#">Extensions<span></span></a>
-                                <a href="#">Tutorials<span></span></a>
-                                <a href="#">Contact us<span></span></a>
+                                <a id="main_link" href="#wrapper">Home<span></span></a>
+                                <a id="main_link" href="#wrapper_cards">Features<span></span></a>
+                                <a id="main_link" href="#wrapper_row">Pages<span></span></a>                                
+                                <a id="main_link" href="#wrapper_info">Extensions<span></span></a>
+                                <a id="main_link" href="#wrapper_tutorial">Tutorials<span></span></a>
+                                <a id="main_link" href="#wrapper_form">Contact us<span></span></a>
                             </ul>
                         </div>
-                        <div class="social_icons">
+                        <div id="social_icons" class="social_icons">
                             <a id="img_1" class="social_img" href="#"></a>
                             <a id="img_2" class="social_img" href="#"></a>
                             <a id="img_3" class="social_img" href="#"></a>
                             <a id="img_4" class="social_img" href="#"></a>
                         </div>
+                        <div class="burger_main"><span></span></div>
                     </div>
                     <div class="main_line"></div>
                 </div>
 
                 <div class="container">
                     <div class="titels">
-                        <h1>Creatives</h1>
-                        <h3> Power by PSDfreebies.com</h3>
+                        <h1 id="title_cr_big" class="anim_items">Creatives</h1>
+                        <h3 id="title_cr_small" class="anim_items"> Power by PSDfreebies.com</h3>
                     </div>
                 </div>
 
                 <div class="container">
-                    <div class="button">
+                    <div class="button_down">
                         <p>Scroll Down</p>
-                        <button>
+                        <a href="#wrapper_blocks">
+                            <button id="btn_scroll_down" href='#wrapper_blocks'>
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
                                 style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -55,14 +57,15 @@
                                     <g>
                                         <g>
                                             <path d="M256,0C114.8,0,0,114.8,0,256s114.8,256,256,256s256-114.8,256-256S397.2,0,256,0z M256,490.7
-				C126.6,490.7,21.3,385.4,21.3,256S126.6,21.3,256,21.3S490.7,126.6,490.7,256S385.4,490.7,256,490.7z" />
+                C126.6,490.7,21.3,385.4,21.3,256S126.6,21.3,256,21.3S490.7,126.6,490.7,256S385.4,490.7,256,490.7z" />
                                             <path d="M326.3,224.3l-70.1,68l-69.4-67.5c-2.8-2.8-12.8-0.1-15.6,2.8c-2.8,2.8-2.8,7.4,0,10.3l79.9,79.9
-				c1.4,1.4,3.3,2.1,5.1,2.1s3.7-0.7,5.1-2.1l79.9-79.9c2.8-2.8,0.6-9-2.2-11.9C336.1,223,329.1,221.4,326.3,224.3z" />
+                c1.4,1.4,3.3,2.1,5.1,2.1s3.7-0.7,5.1-2.1l79.9-79.9c2.8-2.8,0.6-9-2.2-11.9C336.1,223,329.1,221.4,326.3,224.3z" />
                                         </g>
                                     </g>
                                 </g>
                             </svg>
                         </button>
+                        </a>
                     </div>
                 </div>
 
@@ -70,7 +73,8 @@
 
         </div>
     </div>
-    <div class="wrapper wrapper_blocks">
+    <div  class="wrapper wrapper_blocks">
+        <span id="wrapper_blocks"></span>
         <div class="container content_block">
             <div class="top_title">
                 <h1>
@@ -79,7 +83,7 @@
                 <p>W</p>
             </div>
             <div class="icon_blocks">
-                <div class="icon_box">
+                <div id="icon_box_1" class="icon_box anim_items">
                     <div class="circle">
                         <img class="icon" src="maket/Icons/edit.svg" alt="">
                     </div>
@@ -87,7 +91,7 @@
                     <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
                         faucibus.</p>
                 </div>
-                <div class="icon_box">
+                <div id="icon_box_2" class="icon_box anim_items">
                     <div class="circle">
                         <img class="icon" src="maket/Icons/search.svg" alt="">
                     </div>
@@ -95,7 +99,7 @@
                     <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
                         faucibus.</p>
                 </div>
-                <div class="icon_box">
+                <div id="icon_box_3" class="icon_box anim_items">
                     <div class="circle">
                         <img class="icon" src="maket/Icons/chat.svg" alt="">
                     </div>
@@ -103,7 +107,7 @@
                     <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
                         faucibus.</p>
                 </div>
-                <div class="icon_box">
+                <div id="icon_box_4" class="icon_box anim_items">
                     <div class="circle">
                         <img class="icon" src="maket/Icons/heart.svg" alt="">
                     </div>
@@ -114,51 +118,18 @@
             </div>
         </div>
     </div>
-    <div class="row_one">
-        <div class="block_text_1">
-            <div class="block_wrap text_1">
-                <p class="date">Jan 4, 2016 | In Culture</p>
-                <h1>Akita Inu Dog</h1>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
-                    laoreet rutrum faucibus dolor auctor. <br><br>
-
-                    Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Sed posuere consectetur </p>
-            </div>
-        </div>
-        <div class="img_block">
-            <img src="maket/E.png" alt="">
-        </div>
-    </div>
-    <div class="row_two">
-        <div class="img_block">
-            <img src="maket/W.png" alt="">
-        </div>
-        <div class="block_text_2">
-            <div class="block_wrap text_2">
-                <p class="date">Jan 4, 2016 | In Culture</p>
-                <h1>Akita Inu Dog</h1>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
-                    laoreet rutrum faucibus dolor auctor. <br><br>
-
-                    Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Sed posuere consectetur </p>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper cards_wrapper">
+    
+    <div id="wrapper_cards" class="wrapper cards_wrapper">
         <div class="container container_cards">
             <div class="cards_title">
-                <div class="cards_title_b">
+                <div class="big_title cards_title_b">
                     <h1>Let's blog</h1>
                     <p>B</p>
                 </div>
                 <h3>We love clean design and advanced digital solutions.</h3>
             </div>
             <div class="cards">
-                <div class="card">
+                <div class="card anim_items">
                     <div class="card_img">
                         <img src="maket/Layer 83.png" alt="">
                     </div>
@@ -167,7 +138,7 @@
                         dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
                         augue.</p>
                 </div>
-                <div class="card">
+                <div class="card anim_items">
                     <div class="card_img">
                         <img src="maket/Layer 85.png" alt="">
                     </div>
@@ -176,7 +147,7 @@
                         dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
                         augue.</p>
                 </div>
-                <div class="card">
+                <div class="card anim_items">
                     <div class="card_img">
                         <img src="maket/Layer 84.png" alt="">
                     </div>
@@ -185,7 +156,7 @@
                         dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
                         augue.</p>
                 </div>
-                <div class="card">
+                <div class="card anim_items">
                     <div class="card_img">
                         <img src="maket/Layer 83.png" alt="">
                     </div>
@@ -197,7 +168,46 @@
             </div>
         </div>
     </div>
-    <div class="wpapper info_wrapper">
+
+    <div  class="wrapper wrapper_row">
+        <span id="wrapper_row"></span>
+        <div class="row_one">
+            <div class="block_text_1 anim_items">
+                <div class="block_wrap text_1 ">
+                    <p class="date">Jan 4, 2016 | In Culture</p>
+                    <h1>Akita Inu Dog</h1>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
+                        laoreet rutrum faucibus dolor auctor. <br><br>
+
+                        Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sed posuere consectetur </p>
+                </div>
+            </div>
+            <div class="img_block">
+                <img src="maket/E.png" alt="">
+            </div>
+        </div>
+        <div class="row_two">
+            <div class="img_block">
+                <img src="maket/W.png" alt="">
+            </div>
+            <div class="block_text_2 anim_items">
+                <div class="block_wrap text_2 ">
+                    <p class="date">Jan 4, 2016 | In Culture</p>
+                    <h1>Akita Inu Dog</h1>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
+                        laoreet rutrum faucibus dolor auctor. <br><br>
+
+                        Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sed posuere consectetur </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper_info" class="wpapper info_wrapper">
         <div class="container info_conteiner">
             <div class="info_block">
                 <img class="icon" src="maket/Icons/edit.svg" alt="">
@@ -213,7 +223,7 @@
             </div>
         </div>
     </div>
-    <div class="wrapper tutorial_wrapper">
+    <div id="wrapper_tutorial" class="wrapper tutorial_wrapper">
         <div class="container tutorial_container">
             <div class="tutorial_content">
                 <div class="tutorial_text">
@@ -243,28 +253,28 @@
                 <h3> sales long tail influencer pitch release niche market.</h3>
             </div>
             <div class="cards_team">
-                <div class="card_team">
+                <div id="card_team_1" class="card_team anim_items">
                     <img src="maket/people1.png" alt="">
                     <div class="title_team">
                         <h3>LADY SANSA</h3>
                         <p>CEO</p>
                     </div>
                 </div>
-                <div class="card_team">
+                <div id="card_team_2" class="card_team anim_items">
                     <img src="maket/people2.png" alt="">
                     <div class="title_team">
                         <h3>DAVID SMITH</h3>
                         <p>WebDesigner</p>
                     </div>
                 </div>
-                <div class="card_team">
+                <div id="card_team_3" class="card_team anim_items">
                     <img src="maket/people3.png" alt="">
-                    <div class="title_team">
+                    <div class="title_team ">
                         <h3>JACK WOLLER</h3>
-                        <p>Photographer</p>
+                        <p>Photographer</p> 
                     </div>
                 </div>
-                <div class="card_team">
+                <div id="card_team_4" class="card_team anim_items">
                     <img src="maket/people4.png" alt="">
                     <div class="title_team">
                         <h3>JOHN SNOW</h3>
@@ -274,9 +284,42 @@
             </div>
         </div>
     </div>
-
-    <script src="js/script.js"></script>
+    <div id="wrapper_form" class="wrapper wrapper_form">
+        <div class="container container_form">
+            <div class="cards_title title_form">
+                <div class="cards_title_b ">
+                    <h1 id="t">
+                        We’d love to hear about your project
+                    </h1>
+                    <p id="c">C</p>
+                </div>
+            </div>
+            <form action="">
+                <div class="small_input">
+                    <input class = "input "type="text" placeholder="Name">
+                    <input class = "input "type="text" placeholder="Phone">
+                    <input class = "input "type="text" placeholder="Email">
+                </div>
+                <div class="massage_input">
+                    <textarea id="Message" class = "input "type="text" placeholder="Message"></textarea> 
+                </div>
+            </form>
+            <div class="button_form">
+                <input class="btn_input" type="submit" value="SUBMIT" >             
+            </div>
+        </div>
+    </div>
     
+    <div class="modal_map">
+        
+
+        <button class="btn_input" id="btn_close_map">X</button>
+
+    </div>
+
+
+    <script src="js/script.js" type="text/javascript"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 
 </html>
