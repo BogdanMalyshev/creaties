@@ -24,10 +24,14 @@ body {
     min-width: 100%;
 }
 
-.global_div {
+.wrapper_header {
     height: 100vh;
     min-height: 550px;
-    max-height: 900px;
+    max-height: 1000px;
+}
+
+.global_div {
+    height: 100%;
     position: relative;
 }
 
@@ -77,7 +81,6 @@ body {
 #main_container.animate_main {
     background: #000;
     margin-top: 0px;
-    z-index: 2000;
 }
 .animate_main .main_line {
     opacity: 0;
@@ -85,6 +88,7 @@ body {
 
 #main_container {
     position: fixed;
+    z-index: 5;
     left: 0;
     right: 0;
     display: flex;
@@ -230,6 +234,8 @@ body {
     text-align: center;
     margin-top: 1%;
     width: 100%;
+    height: 15vw;
+
 }
 
 #title_cr_big {
@@ -239,6 +245,7 @@ body {
 
     transform: translate(0, 100%);
     opacity: 0;
+
 }
 
 #title_cr_big.active {
@@ -279,9 +286,11 @@ body {
 .button_down button {
     background: rgba(0, 0, 0, 0);
     width: 4.7vw;
-    min-width: 50px;
+    min-width: 55px;
+    max-width: 80px;
     height: 4.7vw;
-    min-height: 50px;
+    min-height: 55px;
+    max-height: 80px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -360,10 +369,17 @@ body {
 
 .icon_blocks {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
     width: 100%;
     overflow: hidden;
+}
+
+.icon_box_wrapper {
+    display: flex;  
+    width: 50%;
+    justify-content: space-around;
 }
 
 .icon_box {
@@ -371,7 +387,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 17vw;
+    width: 50%;
     margin: 20px;
     opacity: 0;
     transform: translate(100vh , 0);
@@ -539,6 +555,8 @@ body {
     font-size: 2vw;
     font-weight: 500;
     padding-bottom: 4vw;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .cards_title_b {
@@ -546,7 +564,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
     width: 100%;
     height: 14vw;
     text-align: center;
@@ -557,14 +574,14 @@ body {
     z-index: 1;
     font-size: 14vw;
     font-weight: 800;
-    color: #e2e2e2;
+    color: #C6C6C6;
     font-stretch: extra-condensed;
 }
 
 .cards_title_b h1 {
     position: absolute;
     text-transform: uppercase;
-    color: 222222;
+    color: #222222;
     z-index: 2;
     font-weight: 500;
     font-size: 2.7vw;
@@ -575,12 +592,15 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-
-    perspective: 1000px;
 }
-
+.card_wrapper {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
 .card {
-    width: 24%;
+    width: 45%;
     min-width: 200px;
     min-height: 200px;
 }
@@ -661,7 +681,7 @@ body {
     display: flex;
     justify-content: space-between;
     height: 100vh;
-    max-height: 900px;
+    align-items: center;
 }
 
 .tutorial_content {
@@ -713,7 +733,7 @@ body {
     cursor: pointer;
 }
 
-.link_t span {
+.btn_tutorial {
     height: 100%;
     width: 100%;
     background: #00000071;
@@ -724,40 +744,49 @@ body {
     z-index: 1;
 }
 
-.link_t p {
-    position: absolute;
+.wrapper_p {
+    position: absolute;    
     left: 0;
     right: 0;
-    bottom: 25%;
-    color: white;
+    top: 0;
+    bottom: 0;
     z-index: 4;
-    text-transform: uppercase;
-    text-align: left;
-    padding-left: 20px;
-    font-size: 15px;
+    display: flex;
+    align-items: center;
 }
 
-.link_t:hover span {
+.wrapper_p p {
+    color: white;
+    font-size:100%;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.link_t:hover .btn_tutorial {
     left: 0;
 }
 
-#full {
-    width: 70%;
-}
-
-#high {
+.link_t:nth-child(1) {
     width: 80%;
 }
 
-#different {
+.link_t:nth-child(2) {
     width: 90%;
+}
+
+.link_t:nth-child(3) {
+    width: 100%;
 }
 
 .tutorial_image {
     width: 50%;
+    max-height: 650px;
+    height: 100%;
     position: relative;
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
 }
 
 .tutorial_image img {
@@ -767,7 +796,9 @@ body {
     top: 0;
     left: 0;
     object-fit: contain;
+    object-position: center;
     padding: 5vw 0 5vw 0;
+
 }
 /*-------------------------cards_team------------------------*/
  .wrapper_team_cards{
@@ -779,8 +810,15 @@ body {
     flex-direction: row;
     align-items: flex-start;
 }
+.cards_team_wrapper {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 .card_team {
-    width: 24%;
+    width: 45%;
     min-height: 350px;
     position: relative;
     opacity: 0;
@@ -917,55 +955,36 @@ body {
 .input::placeholder{
     color: white;
 }
-/*---------------------------Map------------------------*/
-.modal_map {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    background: rgba(0,0,0,0.4);
-    top: 0;
-    left: 0;
-    display: none;
+
+/*---------------------------------footer---------------------------------*/
+
+.wrapper_footer {
+    background:#222222;
+    height: 80px;
 }
 
-#map {
-    width: 80%;
-    height: 80%;
-    position: relative;
-}
-#map iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    object-fit: cover;
-}
-
-.modal_active {
+.container_footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    left: 0;
-    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    color: white ;
+    font-size: 13px;
 }
 
-#btn_close_map {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 300;
-}
+/*-----------------------------media 768px - 991px-----------------------------*/
 
+@media (max-width: 991px){
 
-
-/*-----------------------------------media-------------*/
-@media (max-width: 1000px) {
+/*------------------------------burger menu active------------------------------*/
     #main_container {
         margin-top: 0;
         background: #000;
-        padding: 5px;
+        padding: 10px;
+
     }
 
     .main_line {
@@ -977,7 +996,6 @@ body {
         position: relative;
         width: 30px;
         height: 20px;
-        z-index: 5;
         margin-right: 20px;
         cursor: pointer;
     }
@@ -991,6 +1009,7 @@ body {
         left: 0;
         bottom: 0;
         transition: all 0.3s ease 0s ;
+        z-index: 5;
     }
     .burger_main:after{
         content: '';
@@ -1001,6 +1020,7 @@ body {
         left: 0;
         top: 0;
         transition: all 0.3s ease 0s ;
+        z-index: 5;
     }
     .burger_main span{
         width: 100%;
@@ -1008,10 +1028,9 @@ body {
         top:9px;
         height: 2px;
         background: #fff;
+        z-index: 5;
     }
     .main {
-        position: absolute;
-        /*top: -100%;*/
         left: 0;
         top: -100%;
         background: rgba(0,0,0,1);
@@ -1047,23 +1066,342 @@ body {
     .burger_main.active span{
         display:none;                       
     }
+/*------------------------------burger menu active/exit------------------------------*/
+    .global_div {
+        min-height: 450px;
+    }
+
+    .social_icons {
+        width: 20%;
+    }
+
+    #title_cr_big {
+        font-size: 80px;
+    }
+
+    #title_cr_small {
+        font-size: 15px;
+    }
+    /* --------------------------------block_icon -----------------------*/
+    
+    .top_title {
+        margin-bottom: 40px;
+    }
+
+    .top_title h1 {
+        font-size: 28px;
+    }
+
+    .top_title p {
+        font-size: 140px;
+    }
+
+    .icon_blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon_box_wrapper {
+        width: 100%;
+    }
+
+    .icon_box {
+        width: 40%;
+    }
+
+    /* --------------------------------cards -----------------------*/
+    .cards_title h3 {
+        font-size: 23px;
+    }
+
+    .cards_title_b h1 {
+        font-size: 28px;
+    }
+
+    .cards_title_b p {
+        font-size: 140px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card_wrapper {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .card {
+        width: 40%;
+        margin: 20px 20px 20px 20px;
+    }
+
+    .card h3 {
+        font-size: 17px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card_img {
+
+        min-height: 200px;
+    }
+    /* --------------------------------cards team -----------------------*/
+
+    .cards_team {
+        flex-direction: column;
+    }
+
+    .cards_team_wrapper {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card_team {
+        width: 30%;
+        min-width: 230px;
+        margin: 20px 20px 20px 20px;
+    }
 }
 
-/*---------------------------------footer---------------------------------*/
+/*-----------------------------media 576px - 767px-----------------------------*/
 
-.wrapper_footer {
-    background:#222222;
-    height: 80px;
+@media (max-width: 767px) {
+
+    /* --------------------------------Akita Inu Dog -----------------------*/
+    .block_text_1 {
+        width:100%;
+    }
+
+    .block_text_2 {
+        width:100%;
+    }
+
+    .img_block {
+        display: none;
+    }
+
+    /* ------------------------------ Info Block -----------------------*/
+    .info_conteiner {
+        flex-direction: column;
+
+    }
+    .info_block{
+        width: 100%;
+    }
+
+    .info_block:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    /* -------------------------------- tutorial -----------------------*/
+    .tutorial_container {
+        min-height: 400px;
+    }
+
+    .tutorial_image {
+        display: none;
+    }
+
+    .tutorial_content {
+        width: 100%;
+    }
+
+    /* --------------------------------form -----------------------*/
+
+    .small_input {
+        flex-direction: column;
+    }
+
+    .small_input input {
+        width: 100%;
+    }
+
+    .small_input input:nth-child(1),
+    .small_input input:nth-child(2){
+        margin-bottom: 20px;
+    }
+
+    .wrapper_footer {
+        height: 60px; 
+    }
+
+    .container_footer {
+        flex-direction: column;
+    }
+
 }
 
-.container_footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+@media (max-width: 575px) { 
+    #logo {
+        display: none;
+    }
 
-    height: 100%;
-    width: 100%;
+    .global_div {
+        min-height: 450px;
+    }
 
-    color: white ;
-    font-size: 13px;
+    .social_icons {
+        width: 40%;
+    }
+
+    #title_cr_big {
+        font-size: 42px;
+    }
+
+    #title_cr_small {
+        font-size: 12px;
+    }
+    /* --------------------------------block_icon -----------------------*/
+    
+    .top_title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .top_title h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .top_title p {
+        font-size: 100px;
+    }
+
+    .icon_blocks {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .icon_box_wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .icon_box {
+        width: 80%;
+    }
+    .icon_box h3 {
+        margin-top: 15px;
+    }
+
+    .icon_box p{
+        margin-top: 10px;
+    }
+
+    /* --------------------------------cards -----------------------*/
+    .cards_title {
+        margin-top: 40px;
+    }
+    .cards_title h3 {
+        font-size: 18px;
+    }
+
+    .cards_title_b h1 {
+        font-size: 23px;
+    }
+
+    .cards_title_b p {
+        font-size: 100px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 30px;
+    }
+
+    .card_img {
+        margin-bottom: 20px; 
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+    /* --------------------------------Akita Inu Dog -----------------------*/
+    .block_wrap h1 {
+        font-size: 22px;
+    }
+
+    /* ------------------------------ Info Block -----------------------*/
+
+    .info_block{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .info_block p {
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .info_block:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    /* -------------------------------- tutorial -----------------------*/
+    .tutorial_container {
+        min-height: 300px;
+    }
+
+    .tutorial_content {
+        align-items: center;
+    }
+
+    .tutorial_text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .tutorial_text h1 {
+        font-size: 20px;
+    }
+
+    .tutorial_buttons {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .link_t:nth-child(1),
+    .link_t:nth-child(2),
+    .link_t:nth-child(3){
+        width: 100%;
+    }
+
+
+    /* --------------------------------cards team -----------------------*/
+
+    .cards_team {
+        flex-direction: column;
+    }
+
+    .cards_team_wrapper {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card_team {
+        width: 30%;
+        min-width: 230px;
+        margin: 20px 20px 20px 20px;
+    }
 }

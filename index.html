@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div id="wrapper" class="wrapper">
+    <div id="wrapper" class="wrapper wrapper_header">
         <div class="global_div">
             <div class="bg_img"></div>
             <div class="header">
@@ -83,38 +83,43 @@
                 <p>W</p>
             </div>
             <div class="icon_blocks">
-                <div id="icon_box_1" class="icon_box anim_items">
+                <div class="icon_box_wrapper">
+                    <div id="icon_box_1" class="icon_box anim_items">
                     <div class="circle">
                         <img class="icon" src="maket/Icons/edit.svg" alt="">
                     </div>
                     <h3>FEATURE ONE</h3>
                     <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
                         faucibus.</p>
-                </div>
-                <div id="icon_box_2" class="icon_box anim_items">
+                    </div>
+                    <div id="icon_box_2" class="icon_box anim_items">
                     <div class="circle">
                         <img class="icon" src="maket/Icons/search.svg" alt="">
                     </div>
                     <h3>FEATURE TWO</h3>
                     <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
                         faucibus.</p>
+                    </div>
                 </div>
-                <div id="icon_box_3" class="icon_box anim_items">
+                <div class="icon_box_wrapper">
+                    <div id="icon_box_3" class="icon_box anim_items">
                     <div class="circle">
                         <img class="icon" src="maket/Icons/chat.svg" alt="">
                     </div>
                     <h3>FEATURE THREE</h3>
                     <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
                         faucibus.</p>
-                </div>
-                <div id="icon_box_4" class="icon_box anim_items">
-                    <div class="circle">
-                        <img class="icon" src="maket/Icons/heart.svg" alt="">
                     </div>
-                    <h3>FEATURE FOUR</h3>
-                    <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
-                        faucibus.</p>
+                    <div id="icon_box_4" class="icon_box anim_items">
+                        <div class="circle">
+                            <img class="icon" src="maket/Icons/heart.svg" alt="">
+                        </div>
+                        <h3>FEATURE FOUR</h3>
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum
+                            faucibus.</p>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -129,7 +134,8 @@
                 <h3>We love clean design and advanced digital solutions.</h3>
             </div>
             <div class="cards">
-                <div class="card anim_items">
+                <div class="card_wrapper">
+                    <div class="card anim_items">
                     <div class="card_img">
                         <img src="maket/Layer 83.png" alt="">
                     </div>
@@ -137,17 +143,19 @@
                     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
                         dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
                         augue.</p>
-                </div>
-                <div class="card anim_items">
-                    <div class="card_img">
-                        <img src="maket/Layer 85.png" alt="">
                     </div>
-                    <h3>Fresh Summer Campaign</h3>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
-                        augue.</p>
+                    <div class="card anim_items">
+                        <div class="card_img">
+                            <img src="maket/Layer 85.png" alt="">
+                        </div>
+                        <h3>Fresh Summer Campaign</h3>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
+                            augue.</p>
+                    </div>
                 </div>
-                <div class="card anim_items">
+                <div class="card_wrapper">
+                    <div class="card anim_items">
                     <div class="card_img">
                         <img src="maket/Layer 84.png" alt="">
                     </div>
@@ -155,15 +163,16 @@
                     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
                         dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
                         augue.</p>
-                </div>
-                <div class="card anim_items">
-                    <div class="card_img">
-                        <img src="maket/Layer 83.png" alt="">
                     </div>
-                    <h3>Fresh Summer Campaign</h3>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
-                        augue.</p>
+                    <div class="card anim_items">
+                        <div class="card_img">
+                            <img src="maket/Layer 83.png" alt="">
+                        </div>
+                        <h3>Fresh Summer Campaign</h3>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel
+                            augue.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -233,9 +242,9 @@
                         laoreet rutrum faucibus dolor auctor.</p>
                 </div>
                 <div class="tutorial_buttons">
-                    <button id="full" class="link_t"><p>Fully Responsive Design</p><span></span></button>
-                    <button id="high" class="link_t"><p>High Quality Code</p><span></span></button>
-                    <button id="different" class="link_t"><p>Different Headers & Layout</p><span></span></button>
+                    <button class="link_t"><span class="wrapper_p"><p>Fully Responsive Design</p></span><span class="btn_tutorial"></span></button>
+                    <button class="link_t"><span class="wrapper_p"><p>High Quality Code</p></span><span class="btn_tutorial"></span></button>
+                    <button class="link_t"><span class="wrapper_p"><p>Different Headers & Layout</p></span class="btn_tutorial"><span></span></button>
                 </div>
             </div>
             <div class="tutorial_image">
@@ -250,37 +259,42 @@
                     <h1>OUR TEAM</h1>
                     <p>T</p>
                 </div>
-                <h3> sales long tail influencer pitch release niche market.</h3>
+                <h3> Sales long tail influencer pitch release niche market.</h3>
             </div>
             <div class="cards_team">
-                <div id="card_team_1" class="card_team anim_items">
+                <div class="cards_team_wrapper">
+                    <div id="card_team_1" class="card_team anim_items">
                     <img src="maket/people1.png" alt="">
                     <div class="title_team">
                         <h3>LADY SANSA</h3>
                         <p>CEO</p>
                     </div>
-                </div>
-                <div id="card_team_2" class="card_team anim_items">
-                    <img src="maket/people2.png" alt="">
-                    <div class="title_team">
-                        <h3>DAVID SMITH</h3>
-                        <p>WebDesigner</p>
+                    </div>
+                    <div id="card_team_2" class="card_team anim_items">
+                        <img src="maket/people2.png" alt="">
+                        <div class="title_team">
+                            <h3>DAVID SMITH</h3>
+                            <p>WebDesigner</p>
+                        </div>
                     </div>
                 </div>
-                <div id="card_team_3" class="card_team anim_items">
+                <div class="cards_team_wrapper">
+                    <div id="card_team_3" class="card_team anim_items">
                     <img src="maket/people3.png" alt="">
                     <div class="title_team ">
                         <h3>JACK WOLLER</h3>
                         <p>Photographer</p> 
+                        </div>
+                    </div>
+                    <div id="card_team_4" class="card_team anim_items">
+                        <img src="maket/people4.png" alt="">
+                        <div class="title_team">
+                            <h3>JOHN SNOW</h3>
+                            <p>Photographer</p>
+                        </div>
                     </div>
                 </div>
-                <div id="card_team_4" class="card_team anim_items">
-                    <img src="maket/people4.png" alt="">
-                    <div class="title_team">
-                        <h3>JOHN SNOW</h3>
-                        <p>Photographer</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

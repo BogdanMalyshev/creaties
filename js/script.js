@@ -14,7 +14,7 @@ const mainContaier = document.querySelector('#main_container'),
 	
 		window.addEventListener('scroll', function(){
 
-			if (window.pageYOffset > 0 && body.clientWidth > 1000) {
+			if (window.pageYOffset > 0 && body.clientWidth > 991) {
 				mainContaier.classList.add('animate_main');
 				logo.classList.add('animate_logo');
 				main.classList.add('main_animate');
@@ -57,7 +57,7 @@ mainLink.forEach((e)=>{
  			if (pageYOffset + offsetHeight - (animItemsHeight / 3) >= animItemsOffset && pageYOffset < (animItemsOffset + animItemsHeight)) {
  				e.classList.add('active');
  			} else {
- 				// e.classList.remove('active');
+ 				 // e.classList.remove('active');
  			}
  		});
  	}
