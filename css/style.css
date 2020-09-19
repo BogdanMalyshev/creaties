@@ -119,7 +119,6 @@ body {
     margin-top: 20px;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    overflow: hidden;
 }
 
 .header_main {
@@ -313,7 +312,7 @@ body {
 }
 
 #title_cr_big {
-    color: rgb(255, 255, 255);
+    color: red/*rgb(255, 255, 255)*/;
     font-size: 10vw;
     text-transform: uppercase;
 
