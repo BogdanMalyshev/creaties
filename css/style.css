@@ -1344,14 +1344,12 @@ body {
         padding: 30px 0px 0px 0px;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
-        overflow: auto;
         padding-top: 60px;  
         z-index: 5;
     }
 
     .main.active{
         top: 0;
-
     }
 
     .main ul {
