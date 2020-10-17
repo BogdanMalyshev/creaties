@@ -1,6 +1,6 @@
 'use strict';
 
-
+document.addEventListener('DOMCOntentLoaded', function(){ 
 const mainContaier = document.querySelector('#main_container'),
 	  body = document.querySelector('body'),
 	  logo = document.querySelector('#logo'),
@@ -73,5 +73,5 @@ mainLink.forEach((e)=>{
 
  	setTimeout(()=>animScrollOn(), 500);
  }
-
+});
 
